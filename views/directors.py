@@ -1,3 +1,4 @@
+from flask import request
 from flask_restx import Resource, Namespace
 
 from dao.model.director import DirectorSchema
@@ -12,11 +13,35 @@ class DirectorsView(Resource):
         rs = director_service.get_all()
         res = DirectorSchema(many=True).dump(rs)
         return res, 200
+    
+    def post(self):
+        data = request.json
+        director_service.create(data)
+        return "", 201
 
 
-@director_ns.route('/<int:rid>')
+@director_ns.route('/<int:did>')
 class DirectorView(Resource):
-    def get(self, rid):
-        r = director_service.get_one(rid)
-        sm_d = DirectorSchema().dump(r)
-        return sm_d, 200
+    def get(self, did):
+        try:
+            director = director_service.get_one(did)
+            return DirectorSchema().dump(director), 200
+        except Exception:
+            return "", 404
+
+    def put(self, did):
+        try:
+            data = request.json
+            if "id" not in data:
+                data["id"] = did
+            director_service.update(data)
+            return "", 204
+        except Exception:
+            return "", 404
+
+    def delete(self, did):
+        try:
+            director_service.delete(did)
+            return "", 204
+        except Exception:
+            return "", 404

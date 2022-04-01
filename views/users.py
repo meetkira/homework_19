@@ -16,23 +16,32 @@ class UsersView(Resource):
 
     def post(self):
         data = request.json
-        user_service.create(data=data)
+        user_service.create(data)
         return "", 201
 
 
 @user_ns.route('/<int:uid>')
 class UserView(Resource):
     def get(self, uid):
-        user = user_service.get_one(uid)
-        sm_d = UserSchema().dump(user)
-        return sm_d, 200
+        try:
+            user = user_service.get_one(uid)
+            return UserSchema().dump(user), 200
+        except Exception:
+            return "", 404
 
     def put(self, uid):
         try:
             data = request.json
             if "id" not in data:
                 data["id"] = uid
-            user_service.update(data=data)
+            user_service.update(data)
+            return "", 204
+        except Exception:
+            return "", 404
+
+    def delete(self, uid):
+        try:
+            user_service.delete(uid)
             return "", 204
         except Exception:
             return "", 404

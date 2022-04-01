@@ -17,11 +17,11 @@ class UserDAO:
         self.session.commit()
         return user
 
-    def update(self, data):
-        user = self.get_one(data["id"])
-        user.username = data.get("username")
-        user.password = data.get("password")
-        user.role = data.get("role")
+    def update(self, user):
         self.session.add(user)
         self.session.commit()
         return user
+
+    def delete(self, user):
+        self.session.delete(user)
+        self.session.commit()
