@@ -1,7 +1,7 @@
 import base64
 import hashlib
 
-from constants import PWD_HASH_SALT, PWD_HASH_ITERATIONS
+from helpers.constants import PWD_HASH_SALT, PWD_HASH_ITERATIONS
 from dao.user import UserDAO
 
 
@@ -19,7 +19,8 @@ class UserService:
         return base64.b64decode(hash_digest).decode('utf-8')
 
     def compare_passwords(self, password_hash, other_password):
-        return password_hash == other_password
+        is_true = password_hash == other_password
+        return is_true
 
     def get_one(self, uid):
         return self.dao.get_one(uid)

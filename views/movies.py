@@ -3,12 +3,14 @@ from flask_restx import Resource, Namespace
 
 from dao.model.movie import MovieSchema
 from implemented import movie_service
+from helpers.decorators import auth_required, admin_required
 
 movie_ns = Namespace('movies')
 
 
 @movie_ns.route('/')
 class MoviesView(Resource):
+    @auth_required
     def get(self):
         director = request.args.get("director_id")
         genre = request.args.get("genre_id")
@@ -22,6 +24,7 @@ class MoviesView(Resource):
         res = MovieSchema(many=True).dump(all_movies)
         return res, 200
 
+    @admin_required
     def post(self):
         req_json = request.json
         movie = movie_service.create(req_json)
@@ -30,6 +33,7 @@ class MoviesView(Resource):
 
 @movie_ns.route('/<int:mid>')
 class MovieView(Resource):
+    @auth_required
     def get(self, mid):
         try:
             movie = movie_service.get_one(mid)
@@ -37,6 +41,7 @@ class MovieView(Resource):
         except Exception:
             return "", 404
 
+    @admin_required
     def put(self, mid):
         try:
             data = request.json
@@ -47,6 +52,7 @@ class MovieView(Resource):
         except Exception:
             return "", 404
 
+    @admin_required
     def delete(self, mid):
         try:
             movie_service.delete(mid)
