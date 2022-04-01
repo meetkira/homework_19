@@ -57,6 +57,25 @@ Content-Type: application/json
 
 ###
 
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+###
+
+PUT http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InRlc3QxMjMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MDA0MzgwMH0.Ksah1I561QHj8ZK4R6a0A0idjkSLXYBSr97Kj19GD3E"
+}
+
+###
+
 PUT http://127.0.0.1:10001/movies/21
 Accept: application/json
 Content-Type: application/json
@@ -92,3 +111,4 @@ Content-Type: application/json
 ###
 
 DELETE http://127.0.0.1:10001/movies/21
+

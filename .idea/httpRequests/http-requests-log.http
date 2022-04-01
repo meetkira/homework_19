@@ -1,0 +1,269 @@
+PUT http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InRlc3QxMjMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MDA0MzgwMH0.Ksah1I561QHj8ZK4R6a0A0idjkSLXYBSr97Kj19GD3E"
+}
+
+<> 2022-04-01T141655.201.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T141640.201.json
+
+###
+
+PUT http://127.0.0.1:5000/auth/
+Content-Type: application/json
+{:
+   "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InRlc3QxMjMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MDA0MzcyMX0.Ck2mXgBFAiVGWOIBEjuRAgvRHoH3ZklFhBL1pkXG1_w"
+}:
+
+<> 2022-04-01T141546.400.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T141521.201.json
+
+###
+
+PUT http://127.0.0.1:5000/auth/
+Content-Type: application/json
+{:
+  "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InRlc3QxMjMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MDA0MzY1N30.dvZybrcDrqM0CcS7BS4J6-9zaO7wZtpWTimbdAnav58"
+}:
+
+<> 2022-04-01T141427.400.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T141418.201.json
+
+###
+
+PUT http://127.0.0.1:5000/auth/
+Content-Type: application/json
+{:
+  "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InRlc3QxMjMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MDA0MzQ5Mn0.KtEy2hiP4k9gV354uPv6sWzY-oBQEW_c08iCIgoV_6s"
+}:
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T141303.201.json
+
+###
+
+PUT http://127.0.0.1:5000/auth/
+Content-Type: application/json
+{:
+  "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InRlc3QxMjMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MDA0MzQ5Mn0.KtEy2hiP4k9gV354uPv6sWzY-oBQEW_c08iCIgoV_6s"
+}:
+
+<> 2022-04-01T141146.400.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T141132.201.json
+
+###
+
+PUT http://127.0.0.1:5000/auth/
+Content-Type: application/json
+{:
+  "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InRlc3QxMjMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MDA0MzM2Nn0.sF7ChZBWS53iwugkf7R8XVdSVZL8-NJS7M3OThxYrBA"
+}:
+
+<> 2022-04-01T141002.400.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T140926.201.json
+
+###
+
+PUT http://127.0.0.1:5000/auth/
+Content-Type: application/json
+{:
+  "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InRlc3QxMjMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MDA0MzE5NH0.miSPXgThhoBlzIRxBIZfyH-AXp0ZGwT0W3k8SjiJFZg"
+}:
+
+<> 2022-04-01T140917.400.json
+
+###
+
+PUT http://127.0.0.1:5000/auth/
+Content-Type: application/json
+{:
+  "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InRlc3QxMjMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MDA0MzE5NH0.miSPXgThhoBlzIRxBIZfyH-AXp0ZGwT0W3k8SjiJFZg"
+}:
+
+<> 2022-04-01T140836.400.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T140634.201.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T140332.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T140203.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T140142.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T135753.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T135646.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T135618.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T135542.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "test123",
+  "password": "234"
+}
+
+<> 2022-04-01T135440.500.json
+
+###
+
+POST http://127.0.0.1:10001/auth/
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "test"
+}
+
+###
+
